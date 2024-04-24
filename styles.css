@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+*{padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10vh;
+    background-color:rgb(40, 29, 53);
+    height: 100vh;
+    width:auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+    
+ul{
+    position: relative;
+    transform: skewY(-15deg);
+    width: 100vh;
+    margin-left: 30rem;
+
+    
+}
+li{
+    position: relative;
+    list-style: none;
+    width: 200px;
+    padding: 15px;
+    background: #35383e;
+    z-index: calc(1 * var(--i));
+    transition: 500ms ease all;
+}
+li:hover{
+    background: #2e3133;
+    transform: translateX(-50px);
+}
+li::before{
+    font-family:"fontAwesome";
+    color: #35383e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: attr(data-icon);
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #2e3133;
+    transform-origin: right;
+    transform: skewY(40deg);
+    transition: 1s;
+
+}
+li:hover::before{
+    background: rgba(29, 11, 53, 0.664);
+
+}
+li::after{
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background: #35383e;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 1s;
+}
+li:hover::after{
+    background: rgba(37, 15, 58, 0.493);
+}
+li a{
+    text-decoration: none;
+    color: #999;
+    display: "";
+    text-transform: uppercase;
+    letter-spacing: 0.0em;
+    transition: 1s;
+}
+li:hover a{
+    color: aqua;
+}
+li:last-child::after{
+    box-shadow: -120px 120px 20px rgb(0,0, 0, 0.25);
+}
+  
+  .rei{
+    display: flex;
+    margin-top: 10rem;
+    flex-basis: 200;
+
+  }
+  h1{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: name 3s linear infinite;
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb(255, 255, 255, 0);
+  }
+
+
+  @keyframes name{
+    0%{
+        background-position : -500%;
+    }
+    100%{
+    background-position: 500%;
+  }
+ 
+}
