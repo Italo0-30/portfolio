@@ -42,7 +42,7 @@ img{
     top: 90px;
     left: 0;
     transform: rotateX(95deg) translateZ(-80px);
-    animation: rotateShadown 16s infinite;
+    animation: rotateShadown 5s infinite;
 }
 @keyframes rotateShadown{
     0%{
@@ -70,7 +70,7 @@ img{
     position: relative;
     transform-style: preserve-3d;
     transition: all 0.8s ease-in-out;
-    animation: rotate 16s infinite;
+    animation: rotate 5s infinite;
 }
 @keyframes rotate{
     0%{
