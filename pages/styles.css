@@ -136,3 +136,11 @@ body{
 
 /* QUALIFI */
 
+h1{
+    display: flex;
+    color: #d83133;
+    font-size: 15px;
+}
+.aha{
+    border: 1px solid blanchedalmond;
+}
